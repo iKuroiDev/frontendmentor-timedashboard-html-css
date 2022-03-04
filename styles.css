@@ -158,8 +158,34 @@ ul {
 	color: hsl(235, 45%, 61%);
 }
 
+.item-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .work {
 	background-color: hsl(15, 100%, 70%);
+}
+
+.play {
+	background-color: hsl(195, 74%, 62%);
+}
+
+.study {
+	background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+	background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+	background-color: hsl(264, 64%, 52%);
+}
+
+.selfcare {
+	background-color: hsl(43, 84%, 65%);
 }
 
 @media screen and (min-width: 768px) {
