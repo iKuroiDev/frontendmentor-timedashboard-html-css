@@ -29,7 +29,6 @@ ul {
 }
 
 .rounded {
-	padding: 1.5em;
 	border-radius: 10px;
 }
 
@@ -41,33 +40,40 @@ ul {
 
 .grid {
 	display: grid;
-	gap: 2em;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr 1fr;
+	gap: 1.5em;
+	grid-template-columns: 1fr;
 	width: 100%;
 }
-/* 
-.grid-item {
-	padding: 1.5em;
-	border-radius: 10px;
-} */
 
-.profile-grid {
+.grid-item {
+	background-color: hsl(235, 46%, 20%);
+	border-radius: 10px;
+	padding: 1.5em;
+}
+
+/* .profile-grid {
 	grid-row: 1 / span 2;
 	grid-column: 1 / span 1;
-}
+} */
 
 .profile {
 	background-color: hsl(246, 80%, 60%);
 	position: relative;
+	padding: 1.5em;
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
 }
 
 .profile-picture img {
 	aspect-ratio: 1/1;
-	border: solid 2px #fff;
+	border: solid 3px #fff;
 	border-radius: 9999px;
-	width: 80px;
-	margin-bottom: 30px;
+	width: 70px;
+}
+
+.profile-picture {
+	margin-right: 20px;
 }
 
 .profile-report {
@@ -76,13 +82,14 @@ ul {
 }
 
 .profile-name {
-	font-size: 2.2em;
+	font-size: 1.6em;
 	font-weight: 300;
 }
 
 .profile-filter {
 	background-color: hsl(235, 46%, 20%);
 	margin-top: -20px;
+	padding: 1em;
 }
 
 .profile-filter ul {
@@ -90,19 +97,21 @@ ul {
 	margin-bottom: 0;
 	margin-top: 20px;
 	padding-left: 0;
+	display: flex;
+	justify-content: space-around;
 }
 
 .profile-filter li {
 	transition: opacity 0.2s linear;
 	opacity: 0.5;
-	padding: 10px 0;
+	padding: 8px 0;
 }
 
 .profile-filter li:hover {
 	opacity: 1;
 }
 
-.work {
+/* .work {
 	grid-row: 1 / span 1;
 	grid-column: 2 / span 1;
 }
@@ -115,7 +124,7 @@ ul {
 .study {
 	grid-row: 1 / span 1;
 	grid-column: 4 / span 1;
-}
+} */
 
 @media screen and (min-width: 768px) {
 	body {
@@ -125,6 +134,55 @@ ul {
 	}
 
 	.container {
-		max-width: 980px;
+		max-width: 1080px;
+		width: 100%;
+	}
+
+	.grid {
+		display: grid;
+		gap: 1.5em;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr 1fr;
+		width: 100%;
+	}
+
+	.profile-grid {
+		grid-row: 1 / span 2;
+		grid-column: 1 / span 1;
+	}
+
+	.profile {
+		display: block;
+		padding-bottom: 70px;
+	}
+
+	.profile-picture img {
+		margin-bottom: 30px;
+	}
+
+	.profile-name {
+		font-size: 2.2em;
+	}
+
+	.profile-filter {
+		padding: 1em 1.5em;
+	}
+
+	.profile-filter ul {
+		display: block;
+	}
+	.work {
+		grid-row: 1 / span 1;
+		grid-column: 2 / span 1;
+	}
+
+	.play {
+		grid-row: 1 / span 1;
+		grid-column: 3 / span 1;
+	}
+
+	.study {
+		grid-row: 1 / span 1;
+		grid-column: 4 / span 1;
 	}
 }
