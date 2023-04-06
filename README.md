@@ -4,6 +4,6 @@
 
 ## Welcome! 👋
 
-[Online demo](https://ikuroineko.github.io/frontendmentor-timedashboard-html-css/)
+[Online demo](https://ikuroidev.github.io/frontendmentor-timedashboard-html-css/)
 
 This challenge was provided by [Frontend Mentor](https://www.frontendmentor.io), which has many challenges to help you improve your coding skills by building realistic projects.
